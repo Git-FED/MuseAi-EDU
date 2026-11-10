@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07080d" />
+  <meta name="description" content="FED's MUSE AI EDU — a field guide to how Muse works." />
+  <title>FED's MUSE AI EDU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <canvas id="signalCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="MUSE AI EDU home">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span><b>FED's</b><em>MUSE AI EDU</em></span>
+    </a>
+    <nav class="page-nav"><a href="./lessons.html">Lessons</a><a href="./docs.html">Docs</a><a href="./assets.html">Promo lab</a><a href="./community.html">Community</a><a href="./support.html">Support</a><a href="./about.html">About</a></nav><div class="status"><span class="status-dot"></span> learning system online</div>
+    <a class="invite-mini" href="./invite.html" aria-label="Open FedPromptly community invite"><span class="invite-mini-dot"></span><span>FedPromptly</span><small>community</small><b>↗</b></a><button id="themePulse" class="icon-button" title="Pulse the signal field" aria-label="Pulse the signal field">◌</button>
+  </header><div class="ticker-wrap" aria-label="MUSE AI EDU scrolling announcements"><div class="ticker-track"><span>FIELD NOTES IN MOTION</span><b>✦</b><span>CRON → JOB → WORKER → HANDOFF → VERIFY</span><b>✦</b><span>LEARN THE SYSTEM BEHIND THE SIGNAL</span><b>✦</b><span>FIELD NOTES IN MOTION</span><b>✦</b><span>CRON → JOB → WORKER → HANDOFF → VERIFY</span><b>✦</b><span>LEARN THE SYSTEM BEHIND THE SIGNAL</span><b>✦</b></div></div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">FIELD GUIDE / 00 — ORIENTATION</div>
+      <h1>Learn the system<br><span>behind the signal.</span></h1>
+      <p class="hero-copy">A living primer on how Muse schedules work, remembers context, moves through lanes, and knows when a result is actually done.</p>
+      <div class="hero-actions"><a class="button button-primary" href="./lessons.html">Enter the school <span>↘</span></a><a class="text-button" href="./lessons.html#random">Surprise me <span>↗</span></a></div>
+      <div class="hero-stats"><div><strong>14</strong><span>core lessons</span></div><div><strong>03</strong><span>reference docs</span></div><div><strong>∞</strong><span>questions to ask</span></div></div>
+    </section>
+
+    <section class="signal-card" aria-label="System signal visualization">
+      <div class="signal-head"><span>LIVE SYSTEM MAP</span><span id="clock">--:--:--</span></div>
+      <div class="orbital"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div><div class="core"><span>M</span></div><span class="node node-a">MEMORY</span><span class="node node-b">LANE</span><span class="node node-c">RUN</span><span class="node node-d">VERIFY</span></div>
+      <div class="signal-foot"><span>01 / trigger</span><span>02 / execute</span><span>03 / handoff</span><span>04 / proof</span></div>
+    </section>
+    <section class="promo-strip"><a href="./assets.html"><img src="./assets/banner-cron-goblin.svg" alt="Comical Cron Goblin promotion banner"></a><a href="./assets.html"><img src="./assets/signal-loop.gif" alt="Animated MUSE signal loop"></a></section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="section-intro"><div><div class="eyebrow">THE CURRICULUM</div><h2>Choose a thread.<br><span>Follow it deeper.</span></h2></div><p>Start with the vocabulary, then trace a run from clock to proof. Your progress is kept locally in this browser.</p></div>
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search the school…" autocomplete="off" /></label><div class="filters" role="group" aria-label="Filter curriculum"><button class="filter active" data-filter="all">All <small>17</small></button><button class="filter" data-filter="lesson">Lessons <small>14</small></button><button class="filter" data-filter="reference">Docs <small>03</small></button></div></div>
+      <div class="layout"><aside class="sidebar"><div class="progress-label"><span>YOUR SIGNAL</span><strong id="progressText">0 / 17 complete</strong></div><div class="progress-track"><i id="progressBar"></i></div><nav id="lessonNav" aria-label="Curriculum navigation"></nav></aside><article id="reader" class="reader"><div class="reader-kicker">SELECT A CARD TO BEGIN</div><h3>Where should we<br><span>tune in?</span></h3><p>Every idea in MUSE School is a signal. Select a lesson from the left to open the field notes here.</p><div class="reader-hint">Tip: press <kbd>/</kbd> to search</div></article></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-scanline"><span>FED-OS / MUSE AI EDU</span><span>PUBLIC SIGNAL NETWORK / ONLINE</span><span>◈</span></div><div class="footer-main"><div class="footer-brand"><span class="brand-mark"><i></i><i></i><i></i></span><div><b>FED's</b><strong>MUSE AI EDU</strong><small>Learn the system behind the signal.</small></div></div><div class="footer-groups"><div class="footer-group"><h4>FED-OS</h4><a href="https://www.fedpromptly.org" target="_blank" rel="noopener noreferrer">Ecosystem</a><a href="https://www.fedpromptly.com/aid" target="_blank" rel="noopener noreferrer">Membership</a><a href="https://www.jabburr.com/fed-os" target="_blank" rel="noopener noreferrer">Storefront</a><a href="https://whop.com/fedpromptly/" target="_blank" rel="noopener noreferrer">Whop</a></div><div class="footer-group"><h4>Contact</h4><a href="mailto:contact@fedpromptly.com">General</a><a href="mailto:support@fedpromptly.com">Support</a><a href="mailto:business@fedpromptly.com">Business</a><a href="mailto:careers@fedpromptly.com">Careers</a></div><div class="footer-group"><h4>Media</h4><a href="https://substack.com/@fedpromptly" target="_blank" rel="noopener noreferrer">Articles</a><a href="https://fedpromptly.wordpress.com/" target="_blank" rel="noopener noreferrer">Blog</a><a href="https://gitfed.substack.com/" target="_blank" rel="noopener noreferrer">GitFed Blog</a><a href="https://www.deviantart.com/fedpromptly" target="_blank" rel="noopener noreferrer">Artwork</a></div><div class="footer-group"><h4>Support</h4><a href="https://www.patreon.com/c/FEDpromptly" target="_blank" rel="noopener noreferrer">Patreon</a><a href="https://buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer">Tips</a><a href="./community.html">Discord</a><a href="./private-communities.html">Private Communities</a></div><div class="footer-group"><h4>Social</h4><a href="https://bsky.app/profile/fed-os.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a><a href="https://x.com/Fedpromptly" target="_blank" rel="noopener noreferrer">X / Ads</a><a href="./about.html">About MUSE</a><a href="./support.html">Payment hub</a></div></div></div><div class="footer-bottom"><span>FED-OS · MUSE AI EDU · v1.3</span><span>Static HTML / GitHub Pages / Cloudflare Pages ready</span><span><a href="./index.html">Back to top ↗</a></span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
